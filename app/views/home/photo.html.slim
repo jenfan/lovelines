@@ -1,0 +1,6 @@
+.container.images
+  -@images.in_groups_of(3) do |image|
+    .row
+      .four.columns= image_tag image[0].img.url(:medium) if image[0]
+      .four.columns= image_tag image[1].img.url(:medium) if image[1]
+      .four.columns= image_tag image[2].img.url(:medium) if image[2]

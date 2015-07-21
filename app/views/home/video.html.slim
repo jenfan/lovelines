@@ -1,0 +1,20 @@
+.row
+	#video
+-4.times do 
+	.container.images
+		-@videos.in_groups_of(3) do |video|
+			.row
+				- if video[0]
+					.four.columns
+						=link_to video[0], remote:true do
+							=image_tag video[0].img_url
+				- if video[1]
+					.four.columns
+						=link_to video[1], remote:true do
+							=image_tag video[1].img_url
+				- if video[2]
+					.four.columns
+						=link_to video[1], remote:true do
+							=image_tag video[2].img_url
+						
+/#.lazy_vimeo data-vimeo-id=video[2].vimeoid

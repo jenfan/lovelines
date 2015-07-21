@@ -1,0 +1,9 @@
+header#header.clearfix
+	#header-content
+		a href="http://nabil.com"
+			h1 NABIL
+			=image_tag "logo.png", alt:"NABIL"
+		ul#menu.clearfix
+			-@links[0..-2].each do |link|
+				li=link_to link.name, link.url
+			li.last= link_to(@links.last.name, @links.last.url)
