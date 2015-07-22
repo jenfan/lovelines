@@ -68,7 +68,7 @@ set :bundle_cmd,      "rvm use #{rvm_ruby_string} do bundle"
 # Настройка системы контроля версий и репозитария,
 # по умолчанию - git, если используется иная система версий,
 # нужно изменить значение scm.
-# set :scm,             :git
+set :scm,             :git
 
 # Предполагается, что вы размещаете репозиторий Git в вашем
 # домашнем каталоге в подкаталоге git/<имя проекта>.git.
@@ -77,7 +77,9 @@ set :bundle_cmd,      "rvm use #{rvm_ruby_string} do bundle"
 # set :repository,      "ssh://#{user}@#{deploy_server}/home/#{user}/git/#{application}.git"
 
 ## Если ваш репозиторий в GitHub, используйте такую конфигурацию
-# set :repository,    "git@github.com:username/project.git"
+# set :repository,    "git@github.com:jenfan/lovelines.git"
+set :repository,    "https://github.com/jenfan/lovelines.git"
+
 
 ## --- Ниже этого места ничего менять скорее всего не нужно ---
 
