@@ -27,3 +27,4 @@ development:
   pool: 5
   username: jenfan_lovelin64
   password: Gd0vijZy3A
+  host: postgresql6.locum.ru
