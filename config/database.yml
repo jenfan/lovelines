@@ -20,6 +20,10 @@ test:
   <<: *default
   database: db/test.sqlite3
 
-production:
-  <<: *default
-  database: db/production.sqlite3
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: jenfan_lovelin64
+  pool: 5
+  username: jenfan_lovelin64
+  password: Gd0vijZy3A

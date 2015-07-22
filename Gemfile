@@ -8,7 +8,7 @@ gem 'slim'
 
 gem 'capistrano', github: 'capistrano/capistrano', ref: '96a16', group: :development
 gem 'unicorn' , group: :production
-
+gem 'pg', group: :production
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.9'
