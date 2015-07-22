@@ -20,9 +20,9 @@ test:
   <<: *default
   database: db/test.sqlite3
 
-development:
+production:
   adapter: postgresql
-  encoding: unicode
+  encoding: utf8
   database: jenfan_lovelin64
   pool: 5
   username: jenfan_lovelin64
