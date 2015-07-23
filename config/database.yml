@@ -23,8 +23,8 @@ test:
 production:
   adapter: postgresql
   encoding: utf8
-  database: jenfan_lovelin64
+  database: jenfan_lovelin16
   pool: 5
-  username: jenfan_lovelin64
-  password: Gd0vijZy3A
+  username: jenfan_lovelin16
+  password: qRdLEeWh
   host: postgresql6.locum.ru
