@@ -1,0 +1,266 @@
+
+---
+admin_users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - admin@example.com
+    - $2a$10$CvoFaZs.ZC7zE1TnPNYKBOBa1YyA/ldv.X0Sn98OcGm6qYDx3Rav6
+    - 
+    - 
+    - 
+    - 2
+    - '2015-07-23 17:35:52.366713'
+    - '2015-07-14 16:56:57.174609'
+    - 127.0.0.1
+    - 127.0.0.1
+    - '2015-07-14 16:56:39.743552'
+    - '2015-07-23 17:35:52.368215'
+
+---
+images:
+  columns:
+  - id
+  - name
+  - order
+  - created_at
+  - updated_at
+  - img_file_name
+  - img_content_type
+  - img_file_size
+  - img_updated_at
+  records: 
+  - - 11
+    - ''
+    - 
+    - '2015-07-28 18:59:56.842038'
+    - '2015-07-28 18:59:56.842038'
+    - 123.png
+    - image/png
+    - 858579
+    - '2015-07-28 18:59:56.539709'
+  - - 12
+    - ''
+    - 
+    - '2015-07-28 19:10:23.321299'
+    - '2015-07-28 19:10:23.321299'
+    - 456.png
+    - image/png
+    - 93245
+    - '2015-07-28 19:10:23.170910'
+
+---
+urls:
+  columns:
+  - id
+  - name
+  - url
+  - order
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Home
+    - /home
+    - 1
+    - '2015-07-14 16:58:22.439617'
+    - '2015-07-23 17:36:43.732646'
+  - - 2
+    - Video
+    - /video
+    - 2
+    - '2015-07-14 16:58:37.005439'
+    - '2015-07-23 17:37:10.945482'
+  - - 3
+    - Photo
+    - /photo
+    - 3
+    - '2015-07-14 16:58:52.893818'
+    - '2015-07-23 17:36:08.891585'
+  - - 4
+    - About
+    - /about
+    - 4
+    - '2015-07-14 16:59:03.126249'
+    - '2015-07-23 17:37:03.879885'
+  - - 5
+    - Blog
+    - /blog
+    - 5
+    - '2015-07-14 16:59:13.160748'
+    - '2015-07-23 17:36:01.512555'
+
+---
+videos:
+  columns:
+  - id
+  - vimeoid
+  - img_url
+  - order
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - '128177697'
+    - http://i.vimeocdn.com/video/519498392_640.jpg
+    - 
+    - '2015-07-14 18:45:21.242146'
+    - '2015-07-15 19:11:12.270026'
+  - - 2
+    - '112262469'
+    - http://i.vimeocdn.com/video/497635732_640.jpg
+    - 
+    - '2015-07-14 18:46:15.269272'
+    - '2015-07-15 19:11:12.485941'
+  - - 3
+    - '127253207'
+    - http://i.vimeocdn.com/video/517972154_640.jpg
+    - 
+    - '2015-07-14 18:46:54.922290'
+    - '2015-07-15 19:11:12.697079'
+
+---
+blogs:
+  columns:
+  - id
+  - title
+  - subtitle
+  - body
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - How to make good video
+    - June 9, 2015
+    - "<p><img src=\"../../../system/images/imgs/000/000/012/original/456.png?1438110623\"
+      alt=\"\" width=\"400\" height=\"40\" /></p>\r\n<p>It was a humorously perilous
+      business for both of us. For, before we proceed further, it must be said that
+      the monkey-rope was fast at both ends; fast to Queequeg's broad canvas belt,
+      and fast to my narrow leather one. So that for better or for worse, we two,
+      for the time, were wedded; and should poor Queequeg sink to rise no more, then
+      both usage and honour demanded, that instead of cutting the cord, it should
+      drag me down in his wake.&nbsp;</p>\r\n<p>So, then, an elongated Siamese ligature
+      united us. Queequeg was my own inseparable twin brother; nor could I any way
+      get rid of the dangerous liabilities which the hempen bond entailed.</p>"
+    - '2015-07-28 18:55:10.516224'
+    - '2015-07-28 19:13:15.922766'
+  - - 2
+    - My Trip To Europe
+    - June 11, 2015
+    - "<p><img src=\"../../../system/images/imgs/000/000/011/original/123.png?1438109996\"
+      alt=\"\" width=\"1005\" height=\"468\" /></p>\r\n<p>It was a humorously perilous
+      business for both of us. For, before we proceed further, it must be said that
+      the monkey-rope was fast at both ends; fast to Queequeg's broad canvas belt,
+      and fast to my narrow leather one. So that for better or for worse, we two,
+      for the time, were wedded; and should poor Queequeg sink to rise no more, then
+      both usage and honour demanded, that instead of cutting the cord, it should
+      drag me down in his wake.&nbsp;</p>\r\n<p>So, then, an elongated Siamese ligature
+      united us. Queequeg was my own inseparable twin brother; nor could I any way
+      get rid of the dangerous liabilities which the hempen bond entailed.</p>"
+    - '2015-07-28 19:08:20.958282'
+    - '2015-07-28 19:08:20.958282'
+
+---
+abouts:
+  columns:
+  - id
+  - body
+  - created_at
+  - updated_at
+  - img_file_name
+  - img_content_type
+  - img_file_size
+  - img_updated_at
+  records: 
+  - - 1
+    - "<p>Zaozernykh Evgenii</p>\r\n<p>Hello! I&rsquo;m Zaozernykh Evgenii. I&rsquo;am
+      a filmmaker based in Russia. I shoot fashion, music and commercial video. While
+      the focus of his work has primarily been documentaries and non-fiction, he has
+      seen a recent move to&nbsp;commercial and narrative projects. We love to create
+      films and to use&nbsp;the creative process to tell stories of love. Feel free
+      to click around and get to know us. When you are ready&nbsp;we would love to
+      get to know you over&nbsp;a cup of coffee.</p>\r\n<p>&nbsp;</p>\r\n<p>Awards</p>\r\n<p>Best
+      Fashion Video MoscowStreets 2015 <br />Best Cinematographer - 2014 Film School
+      Awards <br />Best Editor 2014 SPBAWARD <br />For a full CV of my work to date,
+      please contact:</p>\r\n<p>Cinematographer/ Editor&nbsp; <br />Moscow/SPB <br
+      />Alchimestre@gmail.com <br />89651087410&nbsp;</p>"
+    - '2015-07-28 19:40:25.942956'
+    - '2015-07-28 20:01:05.541318'
+    - about.png
+    - image/png
+    - 460343
+    - '2015-07-28 19:40:25.611451'
+
+---
+photos:
+  columns:
+  - id
+  - order
+  - created_at
+  - updated_at
+  - img_file_name
+  - img_content_type
+  - img_file_size
+  - img_updated_at
+  records: 
+  - - 2
+    - 
+    - '2015-07-28 20:19:37.849047'
+    - '2015-07-28 20:19:37.849047'
+    - 1.png
+    - image/png
+    - 401215
+    - '2015-07-28 20:19:37.562074'
+  - - 4
+    - 
+    - '2015-07-28 20:21:01.853510'
+    - '2015-07-28 20:21:01.853510'
+    - tumblr_nopgp5qfI11r07qwao1_500-2.jpg
+    - image/jpeg
+    - 116374
+    - '2015-07-28 20:21:01.691224'
+  - - 6
+    - 
+    - '2015-07-28 20:21:25.164289'
+    - '2015-07-28 20:21:25.164289'
+    - tumblr_nq0e6zggx61rzyfwvo1_500.jpg
+    - image/jpeg
+    - 102786
+    - '2015-07-28 20:21:25.009475'
+  - - 7
+    - 
+    - '2015-07-28 20:22:58.156739'
+    - '2015-07-28 20:22:58.156739'
+    - tumblr_nd8f8ny0dm1sqys5fo1_500.jpg
+    - image/jpeg
+    - 115574
+    - '2015-07-28 20:22:57.964457'
+  - - 8
+    - 
+    - '2015-07-28 20:24:04.929407'
+    - '2015-07-28 20:26:50.249819'
+    - 4.png
+    - image/png
+    - 311255
+    - '2015-07-28 20:26:49.973539'
+  - - 9
+    - 
+    - '2015-07-28 20:24:37.595598'
+    - '2015-07-28 20:24:37.595598'
+    - tumblr_nni3h1k46E1rftw2qo1_500.jpg
+    - image/jpeg
+    - 77089
+    - '2015-07-28 20:24:37.458177'

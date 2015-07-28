@@ -5,6 +5,7 @@ gem "paperclip", "~> 4.3"
 gem 'devise'
 gem 'slim'
 gem 'tinymce-rails', "4.2.1"
+gem 'yaml_db', :git => 'git://github.com/ludicast/yaml_db.git'
 
 gem 'capistrano', github: 'capistrano/capistrano', ref: '96a16', group: :development
 gem 'unicorn' , group: :production
