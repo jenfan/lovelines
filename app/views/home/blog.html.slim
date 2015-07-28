@@ -1,0 +1,10 @@
+.container
+	-@blogs.each do |blog|
+		.row
+			.blog_title
+				==blog.title
+			.blog_subtitle
+				==blog.subtitle
+			.blog_body
+				==blog.body
+		hr

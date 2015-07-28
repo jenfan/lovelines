@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  resources :video
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
@@ -10,9 +9,12 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
   get 'home' => 'home#index'
-  get 'info' => 'home#info'
-  get 'film' => 'home#video'
+  get 'about' => 'home#about'
+  get 'video' => 'home#video'
+  get 'blog' => 'home#blog'
   get 'photo' => 'home#photo'
+  get '/video/:id' =>  'video#show', as: :openvideo
+  #resources :video
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

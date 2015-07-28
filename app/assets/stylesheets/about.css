@@ -1,0 +1,12 @@
+.about {
+	overflow: hidden;
+}
+.about_img img {
+	width: 520px;
+	height: 530px;
+}
+.about_body {
+	text-align: left;
+	padding-left: 30px;
+	line-height: 1.2;
+}

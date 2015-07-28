@@ -18,12 +18,21 @@ class HomeController < ApplicationController
 		end
 	end
 
-	def info
-		
+	def about
+		@about = About.last
 	end
 
+	def blog
+			@blogs = Blog.all.order(created_at: :desc)
+	end	
+
 	def photo
-		@images = Image.all
+		images = Photo.all.order(created_at: :desc)
+		@images_odd = []
+		@images_even = []
+		images.each_with_index do |photo, index|
+			(index.even? ? @images_odd : @images_even) << photo.img.url
+		end
 	end
 
   private

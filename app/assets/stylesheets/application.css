@@ -21,21 +21,39 @@
 	overflow: hidden;
 }
 .row {
-	margin-bottom: 11px;
+	margin-bottom: 8px;
 }
 .column, .columns {
-	margin-left: 2.5%;
-}
-#video iframe {
-	/*display: none;*/
-	width: 930px;
-	height: 500px;
-	background-color: black;
-}
-#video {
-	height: 500px;
-	display: none;
+	margin-left: 2%;
 }
 div.four:hover {
 	opacity: 0.9;
+}
+#title {
+	color: black;
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+}
+.body#home {
+	height: 60%;
+	width: 100%;
+	overflow: hidden;
+}
+.bottom {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	line-height: 1.2;
+}
+.bottom p {
+	padding: 0;
+	margin: 0;
+	font-weight: 200;
+}
+.center {
+	margin: 0 auto;
+}
+.container_images img {
+	margin-bottom: 10px;
 }

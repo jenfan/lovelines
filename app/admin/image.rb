@@ -33,4 +33,8 @@ ActiveAdmin.register Image do
     f.actions
   end
 
+  show do |image|
+     image.img.url
+  end
+
 end

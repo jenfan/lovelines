@@ -1,0 +1,22 @@
+#video iframe {
+	/*display: none;*/
+	width: 1064px;
+	margin-right: 36px;
+	margin-bottom: 10px;
+	/*height: 500px;*/
+	background-color: black;
+}
+#video {
+	height: 500px;
+	margin-bottom: 5px;
+	display: none;
+	overflow: hidden;
+}
+.container_videos {
+	max-width:1244px;
+	width:85%
+}
+.video_image img {
+	width: 346px;
+	height: 220px;
+}
