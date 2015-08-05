@@ -1,4 +1,4 @@
-iframe = $('<iframe width="931" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen />');
+iframe = $('<iframe width="100%" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen />');
 iframe.attr('src', "//player.vimeo.com/video/"+<%=@id%>+"?portrait=0&amp;&amp;title=0&amp;byline=0&amp;badge=0&amp;color=ffffff");
 // $('div#video').html(iframe);
 $('div#video').show().html(iframe).fadeIn(200);

@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require fancybox
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
@@ -18,6 +19,9 @@
 
 // $(document).on("page:fetch", stopSpinner);
 $(document).on("ready page:load", function(){ 
+	$(document).ready(function() {
+	  $("a.fancybox").fancybox();
+	});
 	$('div.lazy_vimeo').each(function(){
 			var id = $(this).data('vimeo-id');
 			// iframe = $('<iframe width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen />');
