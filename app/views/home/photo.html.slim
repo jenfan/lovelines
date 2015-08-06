@@ -2,10 +2,10 @@
   .row#links
     .six.columns
 		  -@images_odd.each do |image|
-		    = link_to(image_tag(image), image) if image
+		    = link_to(image_tag(image[:large]), image[:small]) if image
     .six.columns
     	-@images_even.each do |image|
-		    = link_to(image_tag(image), image) if image
+		    = link_to(image_tag(image[:large]), image[:small]) if image
 #blueimp-gallery.blueimp-gallery.blueimp-gallery-controls
 	.slides
     h3.title

@@ -2,12 +2,13 @@ class HomeController < ApplicationController
 	  before_action :load_categories
 
 	def index
+		@video = Video.where(to_index: true).first
 	end
 
 	def video
 		require 'net/http'
 
-		@videos = Video.all.order(order: :asc)
+		@videos = Video.all.order(created_at: :desc).order(order: :asc)
 		@videos.each do |video|
 			if video.img_url.empty?
 				source = "http://vimeo.com/api/v2/video/#{video.vimeoid}.json"
@@ -31,8 +32,9 @@ class HomeController < ApplicationController
 		@images_odd = []
 		@images_even = []
 		images.each_with_index do |photo, index|
-			(index.even? ? @images_odd : @images_even) << photo.img.url
+			(index.even? ? @images_odd : @images_even) << { small: photo.img.url, large: photo.img.url(:medium) }
 		end
+		# raise @images_odd.first[:small].inspect
 	end
 
   private
