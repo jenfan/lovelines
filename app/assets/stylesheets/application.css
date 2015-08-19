@@ -58,17 +58,21 @@ div.four:hover {
 .container_images img {
 	margin-bottom: 10px;
 }
-a.prev, a.next {
+a.prev, a.next, a.close {
 	background-repeat: no-repeat;
 	border: 0px !important;
 	width: 80px !important;
 	height: 80px !important;
 }
+a.close {
+	background-image: url("close.png") !important;
+	background-position: center center;
+}
 a.prev {
 	background-image: url("left_arrow.png") !important;
-	background-position: left center;
+	background-position: center center;
 }
 a.next {
 	background-image: url("right_arrow.png") !important;
-	background-position: right center;
+	background-position: center center;
 }
