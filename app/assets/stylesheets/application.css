@@ -33,7 +33,7 @@ div.four:hover {
 #title {
 	color: black;
     margin: auto;
-    width: 30%;
+    width: 60%;
     padding: 10px;
 }
 .body#home {
@@ -57,4 +57,18 @@ div.four:hover {
 }
 .container_images img {
 	margin-bottom: 10px;
+}
+a.prev, a.next {
+	background-repeat: no-repeat;
+	border: 0px !important;
+	width: 80px !important;
+	height: 80px !important;
+}
+a.prev {
+	background-image: url("left_arrow.png") !important;
+	background-position: left center;
+}
+a.next {
+	background-image: url("right_arrow.png") !important;
+	background-position: right center;
 }

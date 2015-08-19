@@ -21,6 +21,7 @@
 $(document).on("ready page:load", function(){ 
 	$(document).ready(function() {
 	  $("a.fancybox").fancybox();
+	  $("a.next, a.prev").html('');
 	});
 	$('div.lazy_vimeo').each(function(){
 			var id = $(this).data('vimeo-id');
