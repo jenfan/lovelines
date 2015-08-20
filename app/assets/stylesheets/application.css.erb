@@ -65,14 +65,14 @@ a.prev, a.next, a.close {
 	height: 80px !important;
 }
 a.close {
-	background-image: url("close.png") !important;
+	background-image: url(<%= asset_path 'close.png' %>) !important;
 	background-position: center center;
 }
 a.prev {
-	background-image: url("left_arrow.png") !important;
+	background-image: url(<%= asset_path 'left_arrow.png' %>) !important;
 	background-position: center center;
 }
 a.next {
-	background-image: url("right_arrow.png") !important;
+	background-image: url(<%= asset_path 'right_arrow.png' %>) !important;
 	background-position: center center;
 }
