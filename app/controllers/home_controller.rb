@@ -29,13 +29,12 @@ class HomeController < ApplicationController
 	end	
 
 	def photo
-		images = Photo.all.order(created_at: :desc)
+		images = Photo.all.order(order: :desc,created_at: :desc,)
 		@images_odd = []
 		@images_even = []
 		images.each_with_index do |photo, index|
 			(index.even? ? @images_odd : @images_even) << { small: photo.img.url, large: photo.img.url(:medium) }
 		end
-		# raise @images_odd.first[:small].inspect
 	end
 
   private
