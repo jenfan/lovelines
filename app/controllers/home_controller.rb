@@ -17,6 +17,7 @@ class HomeController < ApplicationController
 				video.update(img_url: result[0]['thumbnail_large'])
 			end
 		end
+		@home_video_id = Video.where(to_index:true).first.vimeoid
 	end
 
 	def about
