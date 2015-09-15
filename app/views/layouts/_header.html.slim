@@ -1,5 +1,5 @@
 header#header.clearfix
-	h1#title Loveliness
+	h1#title LOVELINESS
 	ul#menu.clearfix
 			-@links[0..-2].each do |link|
 				li=link_to link.name, link.url, class:"#{'active' if request.path_info==link.url}"

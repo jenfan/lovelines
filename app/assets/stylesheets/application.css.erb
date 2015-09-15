@@ -15,6 +15,19 @@
  *= require_self
  */
 
+@font-face {
+    font-family: 'ultralight'; /*a name to be used later*/
+    src: url(<%= asset_path 'avenirnext-regular.ttf' %>); /*URL to font*/
+}
+@font-face {
+    font-family: 'regular'; /*a name to be used later*/
+    src: url(<%= asset_path 'avenirnext-ultralight.ttf' %>); /*URL to font*/
+}
+
+
+#menu li a {
+	font-family: 'ultralight'
+}
 #menu a.active {
 	font-weight: 700;
 }
@@ -32,6 +45,9 @@ div.four:hover {
     margin: auto;
     width: 60%;
     padding: 10px;
+    padding-right: 20px;
+    font-weight: 900;
+    font-family: 'regular';
 }
 .body#home {
 	height: 60%;
